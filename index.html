@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Окна Хаус</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwind/browser@4 "></script>
+</head>
+<body class="font-sans">
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="../images/icon.jpg" alt="Лого" class="h-10 mr-2">
+                <span class="text-xl font-bold text-dark-blue">Окна Хаус</span>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#" class="text-gray-700 hover:text-orange-primary font-medium">Услуги</a>
+                <a href="#" class="text-gray-700 hover:text-orange-primary font-medium">Продукция</a>
+                <a href="#" class="text-gray-700 hover:text-orange-primary font-medium">О компании</a>
+                <a href="#" class="text-gray-700 hover:text-orange-primary font-medium">Портфолио</a>
+                <a href="#" class="text-gray-700 hover:text-orange-primary font-medium">Вопрос-ответ</a>
+                <a href="#" class="text-gray-700 hover:text-orange-primary font-medium">Контакты</a>
+            </nav>
+            <div class="flex space-x-3">
+                <button class="bg-orange-primary text-white px-4 py-2 rounded-md font-medium hover:bg-orange-primary/90">
+                    Заказать замер
+                </button>
+                <button class="bg-gray-800 text-white px-4 py-2 rounded-md font-medium hover:bg-gray-700">
+                    Заказать расчет
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero-section h-screen flex items-center">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 text-white mb-8 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Окна Хаус - Профессиональный подход к остеклению</h1>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                        <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                            <h3 class="font-semibold mb-1">Современные окна</h3>
+                            <p>и балконные конструкции по доступным ценам</p>
+                        </div>
+                        <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                            <h3 class="font-semibold mb-1">Квалифицированный подход</h3>
+                            <p>к решению задач любой сложности</p>
+                        </div>
+                        <div class="bg-black bg-opacity-30 p-4 rounded-lg">
+                            <h3 class="font-semibold mb-1">Гарантия качества</h3>
+                            <p>высококачественного материала и производства</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 bg-white rounded-xl p-6 shadow-xl max-w-md">
+                    <h2 class="text-2xl font-bold text-center mb-6">Заказать замершика на дом</h2>
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Представьтесь, пожалуйста" 
+                                   class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-orange-primary">
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Номер телефона" 
+                                   class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-orange-primary">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="E-mail" 
+                                   class="w-full border border-gray-300 rounded-md p-3 focus:outline-none focus:ring-2 focus:ring-orange-primary">
+                        </div>
+                        <div class="flex items-start">
+                            <input type="checkbox" id="agreement" class="mt-1">
+                            <label for="agreement" class="ml-2 text-sm text-gray-600">
+                                Согласен на обработку персональных данных в соответствии с политикой конфиденциальности
+                            </label>
+                        </div>
+                        <button type="submit" 
+                                class="w-full bg-orange-primary text-white py-3 rounded-md font-medium hover:bg-orange-primary/90 transition">
+                            Отправить заявку
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
